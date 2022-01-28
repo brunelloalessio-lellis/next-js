@@ -31,4 +31,34 @@ export async function getStaticProps() {
   };
 }
 
+/*
+export async function serverSideProps(context) {
+  //run always after deploy
+
+  const req = context.req;
+  const res = context.res;
+  //check coockies or auth
+
+  return {
+    props: {
+      meetups: [
+        {
+          id: "m1",
+          title: "A first meetup",
+          image: "https://cataas.com/cat",
+          address: "Some address 5, City",
+          description: "This is a meetup",
+        },
+        {
+          id: "m2",
+          title: "A second meetup",
+          image: "https://cataas.com/cat",
+          address: "Some address 15, City",
+          description: "This is a meetup",
+        },
+      ],
+    },
+  };
+}*/
+
 export default HomePage;
